@@ -1,7 +1,5 @@
 from google.adk.agents import Agent
 
-# from travel_planner.supporting_agents import travel_inspiration_agent
-
 LLM="gemini-2.5-flash"
 
 root_agent = Agent(
@@ -14,5 +12,5 @@ root_agent = Agent(
             - Use the inspiration_agent to get the best destination, news, places nearby e.g hotels, cafes, etc near attractions and points of interest for the user.
             - You cannot use any tool directly. 
             """,
-    # sub_agents=[travel_inspiration_agent]
+
 )
